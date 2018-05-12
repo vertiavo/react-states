@@ -1,0 +1,14 @@
+.register-body {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.register-form {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 40%;
+}
+
+.register-slim {
+    width: 20%;
+}
