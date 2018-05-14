@@ -8,14 +8,10 @@ class Child extends Component {
         let value = this.props.age;
         switch (operation) {
             case 'increment':
-                // if (value < 120) {
-                    value++;
-                // }
+                value++;
                 break;
             case 'decrement':
-                // if (value > 1) {
-                    value--;
-                // }
+                value--;
                 break;
             default:
                 break;
@@ -30,9 +26,12 @@ class Child extends Component {
                     <label htmlFor="age">Selected age:</label>
                     <input type="number" className="form-control" id="age" name="age" value={this.props.age} disabled/>
                 </div>
-                <button type="submit" className="btn btn-primary" name="decrement" onClick={this.makeOperation} disabled={this.props.age <= 1}>Decrement</button>
+                <button type="submit" className="btn btn-primary" name="decrement" onClick={this.makeOperation}
+                        disabled={this.props.age <= 1}>Decrement
+                </button>
                 |
-                <button type="submit" className="btn btn-primary" name="increment" onClick={this.makeOperation} disabled={this.props.age >= 120}>Increment</button>
+                <button type="submit" className="btn btn-primary" name="increment" onClick={this.makeOperation}
+                        disabled={this.props.age >= 120}>Increment</button>
             </div>
         );
     }
